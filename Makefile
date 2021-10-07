@@ -19,7 +19,7 @@ setup:
 	source .venv/bin/activate && python -m pip install -r requirements.txt
 
 run:
-	python3 src/main.py
+	python3 app/main.py
 
 test:
 	clear && pytest -vv
