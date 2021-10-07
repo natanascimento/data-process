@@ -12,7 +12,7 @@ services:
         - "SOURCE_TABLESPACE=change-or-delete-me"
         - "EXCLUDE=user"
       volumes:
-        - ./setup/01-dbsetup.sql:/opt/oracle/scripts/startup
+        - ./src/sql/01-dbsetup.sql:/opt/oracle/scripts/startup
     dbeaver:
       image: "dbeaver/cloudbeaver:latest"
       hostname: dbeaver
