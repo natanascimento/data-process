@@ -33,8 +33,9 @@ CREATE TABLE fact_reprovacao (
     id_departamento   NUMBER(3) NOT NULL,
     id_disciplina     NUMBER(5) NOT NULL,
     eh_cotista        NUMBER (1) NOT NULL,
-    qtd_reprovacao    NUMBER(5) NOT NULL,
-    qtd_alunos        NUMBER(5) NOT NULL
+    carga_horaria     NUMBER (1) NOT NULL,
+    nota              NUMBER(5) NOT NULL,
+    faltas            NUMBER(5) NOT NULL
 );
 
 ALTER TABLE fact_reprovacao
