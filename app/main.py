@@ -1,8 +1,10 @@
-from database.tables import TablesFactory
+from database.tables.ddl import DDLFactory
 
 
 if __name__ == '__main__':
   
-  TablesFactory(operation="delete-operational")
-  TablesFactory(operation="create-operational")
-  TablesFactory(operation="insert-operational")
+  DDLFactory(operation="delete-operational")
+  DDLFactory(operation="create-operational")
+  DDLFactory(operation="insert-operational")
+  DDLFactory(operation="delete-dw")
+  DDLFactory(operation="create-dw")
