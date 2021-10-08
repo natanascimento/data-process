@@ -11,7 +11,8 @@ class TablesOperator:
 
       for command in self.__queries:
         cursor.execute(command)
-
-      self.__conn.commit()
+      
+      self.__conn.commit()  
+      self.__conn.close()
     except Exception as exception:
       return f"Error: {exception}"
